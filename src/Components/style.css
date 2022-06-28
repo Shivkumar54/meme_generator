@@ -1,0 +1,162 @@
+
+.backg{
+    width: 100%;
+    background-size: cover;
+    
+    overflow: hidden;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.roooot{
+    width: 50%;
+    margin-top: 10px;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);}
+
+.header{
+    height: 12vh;
+    width: 100%;
+    background-color: purple;
+    color: aliceblue;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    }
+.logo{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.logo img{
+    height:100%;
+}
+.text{
+    align-self: center;
+}
+
+h5{
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+/* Memes file */
+
+.input_feild{
+    display:flex;
+    gap: 50px;
+    width:100%;
+    margin-top: 25px;
+    justify-content: center;
+    padding:0 10px
+}
+
+.input_feild input {
+    width:50rem;
+    height:40px;
+    text-indent: 0.75rem;
+    border-radius: 5px;
+}
+
+.buttton{
+    width: 100%;
+    margin-top: 25px;
+    text-align:center;
+}
+.buttton button{
+    background-color: purple;
+    color: aliceblue;
+    width: 80%;
+    height:50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+
+.imagefile {
+    width: 100%;
+    justify-content:center ;
+    text-align: center;
+    position: relative;
+}
+.imagefile img{
+    width:80%;
+    height: 55vh;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.memeText{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+
+}
+
+.bottom {
+    bottom: 10px;
+}
+
+.top {
+    top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .roooot{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .input_feild{
+        display:flex;
+        flex-direction:column;
+        gap: 10px;
+        margin-top: 25px;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .input_feild input {
+        width:90%;
+        height:40px;
+        text-indent: 0.75rem;
+        border-radius: 5px;
+    }
+    .imagefile img{
+        width:100%;
+        height:auto;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .logo img{
+        height:70%;
+    }
+}
